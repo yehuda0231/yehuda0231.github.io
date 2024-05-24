@@ -407,10 +407,10 @@ header.sticky{
     background-color: #ffffff1a;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 15px;
     overflow: hidden;
     transition: transform 0.3s;
-    width: 300px;
+    width: 400px;
 }
 
 .project-card:hover {
