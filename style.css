@@ -410,7 +410,7 @@ header.sticky{
     margin: 15px;
     overflow: hidden;
     transition: transform 0.3s;
-    width: 400px;
+    width: 450px;
 }
 
 .project-card:hover {
