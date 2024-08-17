@@ -75,11 +75,9 @@ section{
     position:relative;
     height: 100vh;
     width: 100%;
-    background-image: url(https://images5.alphacoders.com/132/1325121.png);
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 .slide{
@@ -529,4 +527,11 @@ form textarea{
         top: 100%;
     }
     
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
 }
