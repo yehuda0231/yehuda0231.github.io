@@ -15,3 +15,8 @@ window.onscroll = () => {
     menu.classList.remove("bx-x");
     navlist.classList.remove("open");
 };
+
+function SayHello() {
+    var messageDiv = document.getElementById("message");
+    messageDiv.innerHTML = "Thank you! You have said Hello!";
+}
