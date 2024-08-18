@@ -20,7 +20,10 @@
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
+
 header{
     position:fixed;
     width: 100%;
@@ -69,14 +72,15 @@ span{
     display: none;
 }
 section{
-    padding: 160px 15% 120px;
+    padding: 160px 20% 120px;
 }
 .home{
-    position:relative;
+    position: relative;
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
 }
@@ -188,6 +192,8 @@ header.sticky{
 .about-text h2{
     font-size: 42px;
     line-height: 1;
+    margin-top: 0px; /* Adjust this value to move the text down or up */
+    padding-top: 10px; /* You can also use padding to control spacing */
 }
 .about-text h4{
     font-size: 24px;
@@ -195,6 +201,8 @@ header.sticky{
     color: var(--text-color);
     line-height: 1.7;
     margin: 15px 0 30px;
+    margin-top: 2px; /* Adjust this value to move the text down or up */
+    padding-top: 0px; /* You can also use padding to control spacing */
 }
 .about-text p{
     color: var(--second-color);
@@ -275,7 +283,7 @@ header.sticky{
 
 .portfolio-item {
     width: calc(100% - 20px); /* 50% dari lebar container, dikurangi margin */
-    margin: 10px; /* Jarak antara item portofolio */
+    margin: 1000 px; /* Jarak antara item portofolio */
     position: relative; /* Menetapkan posisi relatif untuk item portofolio */
 }
 
@@ -448,6 +456,8 @@ form textarea{
     cursor: pointer;
 }
 
+
+
 @media only screen and (max-width: 1480px) {
     header{
         padding: 12px 2.5%;
@@ -463,21 +473,22 @@ form textarea{
     .end{
         padding: 15px 3%;
     }
-    @media (max-width: 1100px){
-        :root{
-            --big-font: 4rem;
-            --h2-font: 2.5rem;
-            --p-font: 1rem;
-            transition: .1s;
-        }
+}
+@media (max-width: 1100px){
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
     }
 }
-.home-text h3{
-    font-size: 2.5rem;
-}
-.home{
-    height: 87vh;
-}
+
 @media (max-width: 920px){
     .about{
         grid-template-columns: 1fr;
@@ -528,10 +539,37 @@ form textarea{
     }
     
 }
+.more-about {
+    padding: 60px 15%;
+    background: var(--second-bg-color);
+}
+
+.more-about-text h2 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.more-about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+}
+
+
 
 #message {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
     color: #333;
+}
+
+@media (max-width: 768px) {
+    .about-text h2 {
+        font-size: 40px; /* Smaller font size for better responsiveness */
+        line-height: 2;
+        margin-top: 180px;
+        padding-top: 10px;
+    }
 }
